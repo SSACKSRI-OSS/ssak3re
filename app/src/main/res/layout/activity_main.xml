@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/suggestion"
+            android:layout_width="259dp"
+            android:layout_height="59dp"
+            android:layout_margin="15dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginRight="74dp"
+            android:layout_marginBottom="200dp"
+            android:text="문의하기"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFEB3B"
+            app:icon="@android:drawable/ic_menu_help"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Memo"
+            android:layout_width="264dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginRight="74dp"
+            android:rotationX="0"
+            android:text="메모장"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFEB3B"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Calendar"
+            app:strokeColor="#452F2F" />
+
+        <Button
+            android:id="@+id/Calendar"
+            android:layout_width="264dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginRight="74dp"
+            android:text="달력 및 알람"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFEB3B"
+            app:icon="@android:drawable/ic_menu_month"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Information" />
+
+        <Button
+            android:id="@+id/Search"
+            android:layout_width="397dp"
+            android:layout_height="51dp"
+            android:layout_margin="15dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:text="빠른 검색"
+            android:textColor="@color/black"
+            app:backgroundTint="#A3FFEB3B"
+            app:icon="@android:drawable/ic_menu_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.605"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Information"
+            android:layout_width="266dp"
+            android:layout_height="158dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.566"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:srcCompat="@drawable/_0210520_225801" />
+
+        <view
+            android:id="@+id/view"
+            class="androidx.viewpager.widget.ViewPager"
+            android:layout_width="394dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Search" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

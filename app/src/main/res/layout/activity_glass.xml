@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Glass"
+    tools:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:rotation="90"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/glass" />
+
+    <TextView
+        android:id="@+id/glass_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="음료수병, 기타병류"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/imageView17"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="sans-serif"
+        android:text="- 내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출합니다.\n- 담배꽁초 등 이물질을 넣지 않고 배출합니다.\n- 유리병이 깨지지 않도록 주의하여 배출합니다.\n- 색상별 용기가 설치되어 색상별로 배출이 가능한 경우 분리하여 배출합니다.\n- 접착제로 부착되지 아니하여 상표제거가 가능한 경우 상표를 제거한 후 배출합니다."
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/glass_sort" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="------------------------------------------------------------------------------------------------------------"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/imageView_glass"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:rotation="90"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/glass" />
+
+    <TextView
+        android:id="@+id/glass_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="보증금병"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imageView_glass"
+        app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="sans-serif"
+        android:text="- 소주, 맥주 등 빈용기보증금 대상 유리병은 소매점 등으로 반납하여 보증금 환급받으세요.\n- 병뚜껑과 라벨에 보증금 환불 문구가 있는지 확인하세요.\n- 내용물을 비우세요. 담배꽁초 등 이물질이 있으면 받지 않아요."
+        android:textColor="#888888"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glass_content" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/glass_sort2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

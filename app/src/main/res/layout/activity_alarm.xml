@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    tools:context=".AlarmSet"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TimePicker
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/timePicker"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="17dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="날짜"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:id="@+id/dateText"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/cal_btn"
+            android:backgroundTint="#A3FFEB3B"
+            android:textColor="@color/black"
+            android:text="달력"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="17dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/alarm_btn"
+            android:backgroundTint="#A3FFEB3B"
+            android:textColor="@color/black"
+            android:text="알람 등록"/>
+
+    </LinearLayout>
+
+</LinearLayout>
